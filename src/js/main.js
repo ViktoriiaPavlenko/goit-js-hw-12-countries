@@ -47,7 +47,7 @@ function onRenderCountryCard(country) {
 
 function onRenderCountriesList(country) {
     const listMarkup = countriesListTpl(country);
-    refs.countriesListRef.insertAdjacentHTML('beforeend', listMarkup);
+    refs.countriesListRef.innerHTML = listMarkup;
 }
 
 function onInputClear() {
